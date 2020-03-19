@@ -23,7 +23,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install pyright
-      run: npm install pyright
+      run: sudo npm install -g pyright
 
     - name: Run pyright Test 
       run: pyright
