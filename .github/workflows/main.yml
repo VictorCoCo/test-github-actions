@@ -22,8 +22,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Install Black
-      run: pip3 install black
+    - name: Install pyright
+      run: npm install pyright
 
-    - name: Run Black Check
-      run: python3 -m black --check .
+    - name: Run pyright Test 
+      run: pyright
