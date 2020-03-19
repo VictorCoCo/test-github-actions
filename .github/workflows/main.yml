@@ -26,4 +26,4 @@ jobs:
       run: pip3 install black
 
     - name: Run Black Check
-      run: black --check ./backend
+      run: python3 -m black --check ./backend
