@@ -9,7 +9,9 @@ def main():
     except Exception as err:
         print(str(err))
 
+        print("fs")
+
 
 if __name__ == "__main__":
     main()
-    
+
