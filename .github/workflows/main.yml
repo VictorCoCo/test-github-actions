@@ -31,6 +31,3 @@ jobs:
 
     - name: fs
       run: python3 -m mypy .
-      
-    - name: Run pyright Test 
-      run: pyright --verbose
