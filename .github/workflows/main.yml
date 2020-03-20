@@ -23,7 +23,9 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Set python 3.7 default
-      run: sudo alias python=python3
+      run: |
+        virtualenv --python=python3.7 .venv
+        source .venv/bin/activate
 
 
     - name: Install pyright
