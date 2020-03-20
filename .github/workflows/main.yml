@@ -21,6 +21,12 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    
+    - name: Set python 3.7 default
+      run: sudo update-alternatives --install /usr/bin/python python /usr/bin/python3.7.6
+    
+    - name: Set default
+      run: sudo update-alternatives --config python
 
     - name: Install pyright
       run: sudo npm install -g pyright
