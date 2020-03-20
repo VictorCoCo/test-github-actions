@@ -26,7 +26,7 @@ jobs:
       run: sudo npm install -g pyright
       
     - name: Install requests
-      run: pip3 install requests
+      run: pip install requests
 
     - name: Run pyright Test 
       run: pyright --verbose
