@@ -21,17 +21,16 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    
-    - name: Set python 3.7 default
-      run: alias python=python3
-
 
 
     - name: Install pyright
-      run: sudo npm install -g pyright
+      run: pip3 install mypy
       
     - name: Install requests
       run: pip3 install requests
 
+    - name: fs
+      run: python3 -m mypy .
+      
     - name: Run pyright Test 
       run: pyright --verbose
