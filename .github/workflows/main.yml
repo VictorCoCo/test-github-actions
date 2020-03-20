@@ -24,7 +24,8 @@ jobs:
     
     - name: Set python 3.7 default
       run: |
-        virtualenv --python=python3.7 .venv
+        pip3 install virtualenv
+        python3 -m virtualenv --python=python3.7 .venv
         source .venv/bin/activate
 
 
